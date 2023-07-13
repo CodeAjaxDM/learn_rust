@@ -33,12 +33,12 @@ fn fibb_calc(nth_value: i32) -> i32
     }
     else
     {
-        let mut counter = 1;
+        let mut counter: i32 = 1;
         let mut fibb_value:i32 = 1;
         let mut fibb_prior:i32 = 0;
         while counter < nth_value && nth_value > 0
         {
-            let temp = fibb_value;
+            let temp: i32 = fibb_value;
             fibb_value += fibb_prior;
             fibb_prior = temp;
             counter += 1;
